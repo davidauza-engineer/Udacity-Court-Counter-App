@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/team_a_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/team_a"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/score_team_a"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="3"
+        app:layout_constraintLeft_toLeftOf="@id/team_a_title"
+        app:layout_constraintRight_toRightOf="@id/team_a_title"
+        app:layout_constraintTop_toBottomOf="@id/team_a_title" />
+
+    <Button
+        android:id="@+id/three_points_button"
+        style="@style/buttons"
+        android:text="@string/three_points"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/score_team_a" />
+
+    <Button
+        android:id="@+id/two_points_button"
+        style="@style/buttons"
+        android:text="@string/two_points"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/three_points_button" />
+
+    <Button
+        android:id="@+id/free_throw_button"
+        style="@style/buttons"
+        android:text="@string/free_throw"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/two_points_button" />
+
+</android.support.constraint.ConstraintLayout>
