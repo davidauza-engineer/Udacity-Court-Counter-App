@@ -7,7 +7,9 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
+    // Tracks the score for Team A
     int scoreTeamA = 0;
+    // Tracks the score for Team B
     int scoreTeamB = 0;
 
     @Override
@@ -79,6 +81,16 @@ public class MainActivity extends AppCompatActivity {
      */
     public void addOneForTeamB(View view) {
         scoreTeamB++;
+        displayForTeamB(scoreTeamB);
+    }
+
+    /**
+     * This method reset the scores of both teams
+     */
+    public void resetScores(View view) {
+        scoreTeamA = 0;
+        displayForTeamA(scoreTeamA);
+        scoreTeamB = 0;
         displayForTeamB(scoreTeamB);
     }
 }
