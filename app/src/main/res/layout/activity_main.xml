@@ -9,8 +9,8 @@
     <TextView
         android:id="@+id/team_a_title"
         style="@style/titles"
-        android:fontFamily="sans-serif-medium"
         android:text="@string/team_a"
+        app:fontFamily="sans-serif-medium"
         app:layout_constraintLeft_toLeftOf="@id/three_points_button_a"
         app:layout_constraintRight_toRightOf="@id/three_points_button_a"
         app:layout_constraintTop_toTopOf="parent" />
@@ -18,7 +18,7 @@
     <TextView
         android:id="@+id/team_a_score"
         style="@style/score_text_views"
-        android:fontFamily="sans-serif-light"
+        app:fontFamily="sans-serif-light"
         app:layout_constraintLeft_toLeftOf="@id/team_a_title"
         app:layout_constraintRight_toRightOf="@id/team_a_title"
         app:layout_constraintTop_toBottomOf="@id/team_a_title" />
@@ -53,8 +53,8 @@
     <TextView
         android:id="@+id/team_b_title"
         style="@style/titles"
-        android:fontFamily="sans-serif-medium"
         android:text="@string/team_b"
+        app:fontFamily="sans-serif-medium"
         app:layout_constraintLeft_toLeftOf="@id/three_points_button_b"
         app:layout_constraintRight_toRightOf="@id/three_points_button_b"
         app:layout_constraintTop_toTopOf="parent" />
@@ -62,7 +62,7 @@
     <TextView
         android:id="@+id/team_b_score"
         style="@style/score_text_views"
-        android:fontFamily="sans-serif-light"
+        app:fontFamily="sans-serif-light"
         app:layout_constraintLeft_toLeftOf="@id/team_b_title"
         app:layout_constraintRight_toRightOf="@id/team_b_title"
         app:layout_constraintTop_toBottomOf="@id/team_b_title" />
